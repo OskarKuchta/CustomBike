@@ -1,0 +1,30 @@
+@import url("./assets/Navbar.css");
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+}
+
+body {
+  -webkit-tap-highlight-color: transparent;
+  background-image: url("../public/background.avif");
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+a,
+button {
+  cursor: pointer;
+}
+
+@media (min-width: 1600px) {
+  html {
+    font-size: 22px;
+  }
+}
