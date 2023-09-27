@@ -1,4 +1,7 @@
-@import url("./assets/Navbar.css");
+/* @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap'); */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 html {
   scroll-behavior: smooth;
@@ -8,12 +11,12 @@ html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Rubik", sans-serif;
+  font-family: "Playfair Display", serif;
 }
 
 body {
   -webkit-tap-highlight-color: transparent;
-  background-image: url("../public/background.avif");
+  background-image: url("../public/background.png");
   background-attachment: fixed;
   background-size: cover;
 }

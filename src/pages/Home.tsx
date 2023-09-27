@@ -1,7 +1,14 @@
-import {FC} from "react";
+import { FC } from "react";
+import About from "../components/About";
+import Home from "../components/Navbar/Home";
 
-const Home: FC = () => {
-  return <div></div>;
+const HomePage: FC = () => {
+  return (
+    <>
+      <Home />
+      <About />
+    </>
+  );
 };
 
-export default Home;
+export default HomePage;
