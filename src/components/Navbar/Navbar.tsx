@@ -5,8 +5,8 @@ const Navbar: FC = () => {
   return (
     <nav className="flex justify-between items-center py-8 lg:py-4 px-6 bg-black text-white">
       <div className="flex items-center gap-[1ch]">
-        <img className="navbar-logo w-12 h-12" src="/public/logo.jpg" alt="logo"/>
-        <Link to="/" className="text-sm font-semibold tracking-widest">
+        <img className="navbar-logo w-12 h-12" src="/logo.jpg" alt="logo"/>
+        <Link to="/" className="text-sm font-semibold tracking-widest font-logoFont">
           CUSTOM BIKE
         </Link>
       </div>

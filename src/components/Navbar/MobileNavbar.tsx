@@ -85,10 +85,10 @@ const MobileNavbar: FC = () => {
         <div className="flex items-center gap-[1ch]">
           <img
             className="navbar-logo w-12 h-12"
-            src="/public/logo.jpg"
+            src="/logo.jpg"
             alt="logo"
           />
-          <span className="text-sm font-semibold tracking-widest">
+          <span className="text-sm font-semibold tracking-widest font-logoFont">
             CUSTOM BIKE
           </span>
         </div>
@@ -111,10 +111,10 @@ const MobileNavbar: FC = () => {
                 <div className="flex items-center">
                   <img
                     className="navbar-logo w-12 h-12"
-                    src="/public/logo.jpg"
+                    src="/logo.jpg"
                     alt="logo"
                   />
-                  <h1 className="text-lg text-white px-2">Custom Bike</h1>
+                  <h1 className="text-lg text-white px-2 font-logoFont">Custom Bike</h1>
                 </div>
                 <p
                   className="cursor-pointer text-md text-white"
