@@ -1,7 +1,7 @@
 import { FC } from "react";
 
 const Home: FC = () => {
-  return <section id="home" className="mt-64">
+  return <section id="home">
     Witaj na stronie
   </section>;
 };

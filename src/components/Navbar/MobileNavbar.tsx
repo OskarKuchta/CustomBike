@@ -1,12 +1,11 @@
 import { FC, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
-import { Link } from "react-router-dom";
 
 const navLinks: NavLink[] = [
-  { title: "Główna", href: "/" },
+  { title: "Główna", href: "#home" },
   { title: "Modele", href: "#models" },
   { title: "O nas", href: "#about" },
-  { title: "Kontakt", href: "/contact" },
+  { title: "Kontakt", href: "#contact" },
 ];
 const mobileLinkVars: MobileLinkVars = {
   initial: {
@@ -30,12 +29,12 @@ const NavLink: FC<NavLink> = ({ title, href }) => {
       variants={mobileLinkVars}
       className="text-5xl uppercase text-white text-center py-6"
     >
-      <Link
-        to={href}
+      <a
+        href={href}
         className="hover:text-purple-500 focus:text-purple-500 active:text-purple-500"
       >
         {title}
-      </Link>
+      </a>
     </motion.div>
   );
 };
@@ -85,10 +84,7 @@ const MobileNavbar: FC = () => {
       <nav className="flex justify-between items-center py-4 px-6 bg-black text-white">
         <div className="flex items-center gap-[1ch]">
           <img className="navbar-logo w-12 h-12" src="/logo.jpg" alt="logo" />
-          <button
-            onClick={() => window.scrollTo(0, 0)}
-            className="text-sm font-semibold tracking-widest font-logoFont"
-          >
+          <button className="text-sm font-semibold tracking-widest font-logoFont">
             CUSTOM BIKE
           </button>
         </div>

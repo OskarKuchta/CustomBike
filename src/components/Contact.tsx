@@ -1,7 +1,7 @@
 import { FC } from "react";
 
 const Contact: FC = () => {
-  return <section className="mt-32">
+  return <section id="contact">
     Kontakt ze mną 
   </section>;
 };
