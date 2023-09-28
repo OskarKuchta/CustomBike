@@ -20,5 +20,6 @@ export default {
       'warn',
       { allowConstantExport: true },
     ],
+    'no-unused-vars': 'warn',
   },
-}
+};

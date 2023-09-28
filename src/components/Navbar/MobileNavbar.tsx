@@ -3,8 +3,9 @@ import { Link } from "react-router-dom";
 import { AnimatePresence, motion } from "framer-motion";
 
 const navLinks: NavLink[] = [
-  { title: "Główna", href: "#home" },
-  { title: "O nas", href: "#about" },
+  { title: "Główna", href: "/" },
+  { title: "Modele", href: "/" },
+  { title: "O nas", href: "/" },
   { title: "Kontakt", href: "/contact" },
 ];
 const mobileLinkVars: MobileLinkVars = {
@@ -30,8 +31,8 @@ const NavLink: FC<NavLink> = ({ title, href }) => {
       className="text-5xl uppercase text-white text-center py-6"
     >
       <Link
-        className="hover:text-purple-500 focus:text-purple-500 active:text-purple-500"
         to={href}
+        className="hover:text-purple-500 focus:text-purple-500 active:text-purple-500"
       >
         {title}
       </Link>
@@ -80,14 +81,10 @@ const MobileNavbar: FC = () => {
   };
 
   return (
-    <header>
-      <nav className="flex justify-between items-center py-8 lg:py-4 px-6 bg-black text-white">
+    <header className="w-full fixed top-0">
+      <nav className="flex justify-between items-center py-4 px-6 bg-black text-white">
         <div className="flex items-center gap-[1ch]">
-          <img
-            className="navbar-logo w-12 h-12"
-            src="/logo.jpg"
-            alt="logo"
-          />
+          <img className="navbar-logo w-12 h-12" src="/logo.jpg" alt="logo" />
           <span className="text-sm font-semibold tracking-widest font-logoFont">
             CUSTOM BIKE
           </span>
@@ -110,11 +107,13 @@ const MobileNavbar: FC = () => {
               <div className="flex justify-between items-center">
                 <div className="flex items-center">
                   <img
-                    className="navbar-logo w-12 h-12"
+                    className="navbar-logo w-8 h-8"
                     src="/logo.jpg"
                     alt="logo"
                   />
-                  <h1 className="text-lg text-white px-2 font-logoFont">Custom Bike</h1>
+                  <h1 className="text-xl font-semibold tracking-widest text-white px-2 font-logoFont">
+                    Custom Bike
+                  </h1>
                 </div>
                 <p
                   className="cursor-pointer text-md text-white"

@@ -12,16 +12,21 @@ html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Playfair Display", serif;
 }
-
 body {
   -webkit-tap-highlight-color: transparent;
-  background-image: url("../public/background.png");
-  background-attachment: fixed;
-  background-size: cover;
 }
-
+.bg-fixed {
+  background-image: url(./background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  min-height: 120vh;
+  z-index: -1;
+  filter: brightness(70%);
+}
 a,
 button {
   cursor: pointer;
