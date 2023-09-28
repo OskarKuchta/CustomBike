@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Fuggles&display=swap");
+@import url("./assets/Home.css");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -16,17 +17,7 @@ html {
 body {
   -webkit-tap-highlight-color: transparent;
 }
-.bg-fixed {
-  background-image: url(./background.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  min-height: 120vh;
-  z-index: -1;
-  filter: brightness(70%);
-}
+
 a,
 button {
   cursor: pointer;

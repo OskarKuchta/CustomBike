@@ -1,0 +1,21 @@
+.pages {
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+}
+
+.pages section {
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  min-width: 100vw;
+  min-height: 100vh;
+  font-size: 5em;
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pages section:nth-of-type(even) {
+  background-color: rgba(0, 0, 0, 0.84);
+  color: white;
+}

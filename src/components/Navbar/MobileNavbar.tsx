@@ -1,11 +1,11 @@
 import { FC, useState } from "react";
-import { Link } from "react-router-dom";
 import { AnimatePresence, motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 const navLinks: NavLink[] = [
   { title: "Główna", href: "/" },
-  { title: "Modele", href: "/" },
-  { title: "O nas", href: "/" },
+  { title: "Modele", href: "#models" },
+  { title: "O nas", href: "#about" },
   { title: "Kontakt", href: "/contact" },
 ];
 const mobileLinkVars: MobileLinkVars = {
@@ -85,9 +85,12 @@ const MobileNavbar: FC = () => {
       <nav className="flex justify-between items-center py-4 px-6 bg-black text-white">
         <div className="flex items-center gap-[1ch]">
           <img className="navbar-logo w-12 h-12" src="/logo.jpg" alt="logo" />
-          <span className="text-sm font-semibold tracking-widest font-logoFont">
+          <button
+            onClick={() => window.scrollTo(0, 0)}
+            className="text-sm font-semibold tracking-widest font-logoFont"
+          >
             CUSTOM BIKE
-          </span>
+          </button>
         </div>
         <div className="lg:flex hidden gap-12 text-md text-zinc-400"></div>
         <div className="lg:hidden text-md text-white" onClick={toggleMenu}>
@@ -111,9 +114,12 @@ const MobileNavbar: FC = () => {
                     src="/logo.jpg"
                     alt="logo"
                   />
-                  <h1 className="text-xl font-semibold tracking-widest text-white px-2 font-logoFont">
+                  <button
+                    onClick={() => window.scrollTo(0, 0)}
+                    className="text-xl font-semibold tracking-widest text-white px-2 font-logoFont"
+                  >
                     Custom Bike
-                  </h1>
+                  </button>
                 </div>
                 <p
                   className="cursor-pointer text-md text-white"
@@ -131,7 +137,8 @@ const MobileNavbar: FC = () => {
               >
                 {navLinks.map((link, index) => {
                   return (
-                    <div className="overflow-hidden">
+                    <div className="overflow-hidden" key={index}>
+                      {" "}
                       <NavLink
                         key={index}
                         title={link.title}

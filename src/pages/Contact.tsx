@@ -1,8 +1,8 @@
 import { FC } from "react";
 
 const Contact: FC = () => {
-  return <section>
-
+  return <section className="mt-32">
+    Kontakt ze mną 
   </section>;
 };
 

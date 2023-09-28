@@ -4,6 +4,7 @@ import MobileNavbar from "./components/Navbar/MobileNavbar";
 import { Route, Routes } from "react-router-dom";
 import HomePage from "./pages/Home";
 import Contact from "./pages/Contact";
+import NotExist from "./components/NotExist";
 const App: FC = () => {
   const [windowWidth, setWindowWidth] = useState<number>(window.innerWidth);
   const isPhone: boolean = windowWidth < 769;
@@ -13,7 +14,6 @@ const App: FC = () => {
       setWindowWidth(window.innerWidth);
     };
     window.addEventListener("resize", handleResize);
-
     return () => {
       window.removeEventListener("resize", handleResize);
     };
@@ -21,18 +21,13 @@ const App: FC = () => {
   return (
     <>
       {isPhone ? <MobileNavbar /> : <Navbar />}
-      <main>
+      <>
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/contact" element={<Contact />} />
-          <Route
-            path="*"
-            element={
-              <div>Podany link nie istnieje, wróc na stronę główną.</div>
-            }
-          />
+          <Route path="*" element={<NotExist />} />
         </Routes>
-      </main>
+      </>
     </>
   );
 };
