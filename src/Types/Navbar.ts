@@ -1,6 +1,7 @@
 type NavLink = {
     title: string;
     href: string;
+    onClick?: () => void;
 }
 
 type MobileLinkVars = {

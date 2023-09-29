@@ -1,11 +1,12 @@
 import { FC, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 const navLinks: NavLink[] = [
-  { title: "Główna", href: "#home" },
-  { title: "Modele", href: "#models" },
-  { title: "O nas", href: "#about" },
-  { title: "Kontakt", href: "#contact" },
+  { title: "Główna", href: "/#home" },
+  { title: "Modele", href: "/#models" },
+  { title: "O nas", href: "/#about" },
+  { title: "Kontakt", href: "contact" },
 ];
 const mobileLinkVars: MobileLinkVars = {
   initial: {
@@ -23,18 +24,19 @@ const mobileLinkVars: MobileLinkVars = {
     },
   },
 };
-const NavLink: FC<NavLink> = ({ title, href }) => {
+const NavLink: FC<NavLink> = ({ title, href, onClick }) => {
   return (
     <motion.div
       variants={mobileLinkVars}
       className="text-5xl uppercase text-white text-center py-6"
     >
-      <a
-        href={href}
+      <Link
+        to={href}
         className="hover:text-purple-500 focus:text-purple-500 active:text-purple-500"
+        onClick={onClick}
       >
         {title}
-      </a>
+      </Link>
     </motion.div>
   );
 };
@@ -88,7 +90,6 @@ const MobileNavbar: FC = () => {
             CUSTOM BIKE
           </button>
         </div>
-        <div className="lg:flex hidden gap-12 text-md text-zinc-400"></div>
         <div className="lg:hidden text-md text-white" onClick={toggleMenu}>
           Menu
         </div>
@@ -117,12 +118,6 @@ const MobileNavbar: FC = () => {
                     Custom Bike
                   </button>
                 </div>
-                <p
-                  className="cursor-pointer text-md text-white"
-                  onClick={toggleMenu}
-                >
-                  Powrót
-                </p>
               </div>
               <motion.div
                 variants={containerVars}
@@ -139,6 +134,7 @@ const MobileNavbar: FC = () => {
                         key={index}
                         title={link.title}
                         href={link.href}
+                        onClick={toggleMenu}
                       />
                     </div>
                   );

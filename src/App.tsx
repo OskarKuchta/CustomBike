@@ -1,11 +1,11 @@
+import { Route, Routes } from "react-router-dom";
 import { FC, useState, useEffect } from "react";
 import Navbar from "./components/Navbar/Navbar";
 import MobileNavbar from "./components/Navbar/MobileNavbar";
-import Models from "./components/Models";
-import About from "./components/About";
-import Home from "./components/Home";
-import Contact from "./components/Contact";
-
+import HomePage from "./Pages/HomePage";
+import Contact from "./Pages/Contact";
+import NotExist from "./Pages/NotExist";
+import ScrollToHashElement from "./assets/ScrollToHashElement.tsx";
 const App: FC = () => {
   const [windowWidth, setWindowWidth] = useState<number>(window.innerWidth);
   const isPhone: boolean = windowWidth < 769;
@@ -22,12 +22,12 @@ const App: FC = () => {
   return (
     <>
       {isPhone ? <MobileNavbar /> : <Navbar />}
-      <main className="pages">
-        <Home />
-        <Models />
-        <About />
-        <Contact />
-      </main>
+      <ScrollToHashElement />
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="*" element={<NotExist />} />
+      </Routes>
     </>
   );
 };
