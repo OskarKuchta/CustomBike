@@ -5,15 +5,20 @@
 @tailwind components;
 @tailwind utilities;
 
-html {
-  scroll-behavior: smooth;
+html,
+body {
   scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+*::selection {
+  background-color: rgb(8, 251, 0);
+  color: rgb(4, 4, 4);
 }
 body {
   -webkit-tap-highlight-color: transparent;

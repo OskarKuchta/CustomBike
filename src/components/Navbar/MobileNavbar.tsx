@@ -111,12 +111,13 @@ const MobileNavbar: FC = () => {
                     src="/logo.jpg"
                     alt="logo"
                   />
-                  <button
-                    onClick={() => window.scrollTo(0, 0)}
+                  <Link
+                    to="/#home"
+                    onClick={toggleMenu}
                     className="text-xl font-semibold tracking-widest text-white px-2 font-logoFont"
                   >
                     Custom Bike
-                  </button>
+                  </Link>
                 </div>
               </div>
               <motion.div

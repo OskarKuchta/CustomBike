@@ -1,9 +1,5 @@
-html,
-body {
-  scroll-snap-type: y mandatory;}
-
 .pages {
-  scroll-snap-type: y mandatory;
+  scroll-snap-type: y proximity;
   display: flex;
   flex-direction: column;
 }
@@ -23,4 +19,11 @@ body {
 .pages section:nth-of-type(even) {
   background-color: rgba(0, 0, 0, 0.84);
   color: white;
+}
+.home {
+  background-image: url("background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: brightness(90%);
+  z-index: -1;
 }
