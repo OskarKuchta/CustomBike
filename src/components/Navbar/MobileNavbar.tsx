@@ -4,8 +4,8 @@ import { Link } from "react-router-dom";
 
 const navLinks: NavLink[] = [
   { title: "Główna", href: "/#home" },
-  { title: "Modele", href: "/#models" },
-  { title: "O nas", href: "/#about" },
+  { title: "Mężczyźni", href: "/#men" },
+  { title: "Kobiety", href: "/#women" },
   { title: "Kontakt", href: "contact" },
 ];
 const mobileLinkVars: MobileLinkVars = {
@@ -28,7 +28,7 @@ const NavLink: FC<NavLink> = ({ title, href, onClick }) => {
   return (
     <motion.div
       variants={mobileLinkVars}
-      className="text-5xl uppercase text-white text-center py-6"
+      className="text-4xl uppercase text-white text-center py-6"
     >
       <Link
         to={href}

@@ -1,15 +1,14 @@
 import { FC } from "react";
 import Home from "../components/Home";
-import Models from "../components/Models";
-import About from "../components/About";
-
+import MenSection from "../components/MenSection";
+import LadySection from "../components/LadySection";
 
 const HomePage: FC = () => {
   return (
     <main className="pages">
       <Home />
-      <Models />
-      <About />
+      <MenSection />
+      <LadySection />
     </main>
   );
 };

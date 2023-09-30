@@ -27,3 +27,24 @@
   filter: brightness(90%);
   z-index: -1;
 }
+
+.model_container {
+  background-image: url("men-background.avif");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  z-index: -1;
+}
+.lady-container {
+  background-image: url("ladies-background.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  z-index: -1;
+}
+
+@media (max-width: 768px) {
+  
+  .lady-container {
+    background-size: cover;
+    background-position: center;
+  }
+}
