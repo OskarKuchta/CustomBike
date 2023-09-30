@@ -20,29 +20,30 @@
   background-color: rgba(0, 0, 0, 0.84);
   color: white;
 }
-.home {
-  background-image: url("background.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  filter: brightness(90%);
-  z-index: -1;
-}
 
-.model_container {
-  background-image: url("men-background.avif");
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  z-index: -1;
-}
+.model_container,
 .lady-container {
-  background-image: url("ladies-background.jpg");
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  z-index: -1;
 }
 
+.rotate-arrow::after {
+  content: "🠕";
+  display: inline-block;
+  transition: transform 1s;
+   margin-left: 0.3rem;
+}
+
+.rotate-arrow:hover::after {
+  transform: rotate(180deg);
+}
+.rotate-arrow:focus::after {
+  transform: rotate(180deg);
+}
+.rotate-arrow:active::after {
+  transform: rotate(180deg);
+}
 @media (max-width: 768px) {
-  
   .lady-container {
     background-size: cover;
     background-position: center;
