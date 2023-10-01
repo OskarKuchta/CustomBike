@@ -8,7 +8,10 @@ export default {
     extend: {
       fontFamily: {
         logoFont: ['Fuggles']
-      }
+      },
+      colors: {
+        limon: "#08FB00"
+      },
     },
   },
   plugins: [],

@@ -28,7 +28,7 @@ const Navbar: FC = () => {
   };
 
   return (
-    <header className="w-full fixed top-0">
+    <header className="w-full absolute top-0">
       <nav className="flex justify-between items-center px-6 bg-black text-white">
         <div className="flex items-center gap-[1ch]">
           <img className="navbar-logo w-10 h-10" src={logo} alt="logo" />
