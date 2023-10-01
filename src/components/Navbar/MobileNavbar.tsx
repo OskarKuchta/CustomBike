@@ -1,12 +1,13 @@
 import { FC, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { Link } from "react-router-dom";
-
+import logo from "../../assets/Photos/logo.jpg";
 const navLinks: NavLink[] = [
   { title: "Główna", href: "/#home" },
-  { title: "Mężczyźni", href: "/#men" },
-  { title: "Kobiety", href: "/#women" },
-  { title: "Kontakt", href: "contact" },
+  { title: "Mężczyźni", href: "/meskie" },
+  { title: "Kobiety", href: "/kobiety" },
+  { title: "Personalizacja", href: "/personalizacja" },
+  { title: "Kontakt", href: "/kontakt" },
 ];
 const mobileLinkVars: MobileLinkVars = {
   initial: {
@@ -28,7 +29,7 @@ const NavLink: FC<NavLink> = ({ title, href, onClick }) => {
   return (
     <motion.div
       variants={mobileLinkVars}
-      className="text-4xl uppercase text-white text-center py-6"
+      className="text-4xl uppercase text-white text-center py-4"
     >
       <Link
         to={href}
@@ -83,9 +84,9 @@ const MobileNavbar: FC = () => {
 
   return (
     <header className="w-full fixed top-0">
-      <nav className="flex justify-between items-center py-4 px-6 bg-black text-white">
+      <nav className="flex justify-between items-center py-2 px-6 bg-black text-white">
         <div className="flex items-center gap-[1ch]">
-          <img className="navbar-logo w-12 h-12" src="/logo.jpg" alt="logo" />
+          <img className="navbar-logo w-12 h-12" src={logo} alt="logo" />
           <button className="text-sm font-semibold tracking-widest font-logoFont">
             CUSTOM BIKE
           </button>
@@ -106,19 +107,20 @@ const MobileNavbar: FC = () => {
             <div className="flex h-full flex-col">
               <div className="flex justify-between items-center">
                 <div className="flex items-center">
-                  <img
-                    className="navbar-logo w-8 h-8"
-                    src="/logo.jpg"
-                    alt="logo"
-                  />
-                  <Link
-                    to="/#home"
-                    onClick={toggleMenu}
+                  <img className="navbar-logo w-8 h-8" src={logo} alt="logo" />
+                  <button
+                    onClick={() => window.scrollTo(0, 0)}
                     className="text-xl font-semibold tracking-widest text-white px-2 font-logoFont"
                   >
                     Custom Bike
-                  </Link>
+                  </button>
                 </div>
+                <p
+                  className="cursor-pointer text-md text-white"
+                  onClick={toggleMenu}
+                >
+                  Powrót
+                </p>
               </div>
               <motion.div
                 variants={containerVars}

@@ -7,6 +7,8 @@ import Contact from "./Pages/Contact";
 import NotExist from "./Pages/NotExist";
 import ScrollToHashElement from "./assets/ScrollToHashElement.tsx";
 import Personalize from "./Pages/Personalize.tsx";
+import Men from "./Pages/Men.tsx";
+import Women from "./Pages/Women.tsx";
 const App: FC = () => {
   const [windowWidth, setWindowWidth] = useState<number>(window.innerWidth);
   const isPhone: boolean = windowWidth < 769;
@@ -51,8 +53,10 @@ const App: FC = () => {
       <ScrollToHashElement />
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/personalize" element={<Personalize />} />
-        <Route path="/contact" element={<Contact />} />
+        <Route path="/personalizacja" element={<Personalize />} />
+        <Route path="/meskie" element={<Men />} />
+        <Route path="/kobiety" element={<Women />} />
+        <Route path="/kontakt" element={<Contact />} />
         <Route path="*" element={<NotExist />} />
       </Routes>
     </>

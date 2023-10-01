@@ -1,31 +1,37 @@
 import { FC, useState, useRef } from "react";
 import { Link } from "react-router-dom";
-
+import logo from "../../assets/Photos/logo.jpg";
+import ArrowDownwardSharpIcon from "@mui/icons-material/ArrowDownwardSharp";
 const Navbar: FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [showArrow, setShowArrow] = useState(false);
   const modelsListRef = useRef(null);
 
   const handleMenuClick = () => {
     setIsMenuOpen(!isMenuOpen);
+    setShowArrow(!showArrow);
   };
 
   const handleMenuHover = () => {
     setIsMenuOpen(true);
+    setShowArrow(true);
   };
 
   const handleMenuLeave = () => {
     setIsMenuOpen(false);
+    setShowArrow(false);
   };
 
   const handleLeaveList = () => {
     setIsMenuOpen(false);
+    setShowArrow(false);
   };
 
   return (
     <header className="w-full fixed top-0">
       <nav className="flex justify-between items-center px-6 bg-black text-white">
         <div className="flex items-center gap-[1ch]">
-          <img className="navbar-logo w-10 h-10" src="/logo.jpg" alt="logo" />
+          <img className="navbar-logo w-10 h-10" src={logo} alt="logo" />
 
           <Link
             to="/#home"
@@ -47,7 +53,15 @@ const Navbar: FC = () => {
               onClick={handleMenuClick}
               onFocus={handleMenuClick}
             >
-              Modele
+              Modele{" "}
+              {showArrow ? (
+                <ArrowDownwardSharpIcon
+                  style={{
+                    fontSize: "16px",
+                    marginBottom: "3px",
+                  }}
+                />
+              ) : null}
             </button>
 
             <ul
@@ -58,7 +72,7 @@ const Navbar: FC = () => {
             >
               <li>
                 <Link
-                  to="/#men"
+                  to="/meskie"
                   className="block hover:text-green-500 hover:bg-black focus:outline-none focus:text-green-500 focus:bg-black"
                 >
                   Mężczyźni
@@ -66,7 +80,7 @@ const Navbar: FC = () => {
               </li>
               <li>
                 <Link
-                  to="/#women"
+                  to="/kobiety"
                   className="block hover:text-green-500 hover:bg-black focus:outline-none focus:text-green-500 focus:bg-black"
                 >
                   Kobiety
@@ -76,13 +90,13 @@ const Navbar: FC = () => {
           </div>
           <Link
             onFocus={handleLeaveList}
-            to="/#women"
+            to="/personalizacja"
             className="text-md transition-all duration-700 text-white py-4 px-12 focus:bg-white focus:outline-none focus:text-black hover:bg-white hover:outline-none hover:text-black active:bg-white active:outline-none active:text-black"
           >
             Personalizacja
           </Link>
           <Link
-            to="contact"
+            to="kontakt"
             className="text-md transition-all duration-700 text-white py-4 px-12 focus:bg-white focus:outline-none focus:text-black hover:bg-white hover:outline-none hover:text-black active:bg-white active:outline-none active:text-black"
           >
             Kontakt
