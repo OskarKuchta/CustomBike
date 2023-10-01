@@ -8,7 +8,7 @@ const MenSection: FC = () => {
         id="men"
         className="men-container relative z-[-1] flex items-center justify-center"
       >
-        <h2 className=" absolute bottom-16 md:bottom-4 text-green-500 text-4xl lg:text-7xl tracking-wide">
+        <h2 className=" absolute bottom-16 md:bottom-4 text-limon text-4xl lg:text-7xl tracking-wide">
           Mężczyźni
         </h2>
       </section>

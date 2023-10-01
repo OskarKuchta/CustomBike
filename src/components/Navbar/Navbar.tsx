@@ -35,7 +35,6 @@ const Navbar: FC = () => {
 
           <Link
             to="/#home"
-            onClick={() => scrollTo(0, 0)}
             onFocus={handleLeaveList}
             className="font-logoFont"
           >
@@ -49,7 +48,7 @@ const Navbar: FC = () => {
             onMouseLeave={handleMenuLeave}
           >
             <button
-              className="text-md transition-all duration-700 text-white py-4 px-12 focus:bg-white focus:outline-none focus:text-black hover:bg-white hover:outline-none hover:text-black active:bg-white active:outline-none active:text-black rotate-arrow"
+              className="text-md transition-all duration-700 text-white py-4 px-12 focus:bg-white focus:outline-none focus:text-black hover:bg-white hover:outline-none hover:text-limo active:bg-white active:outline-none active:text-black "
               onClick={handleMenuClick}
               onFocus={handleMenuClick}
             >
@@ -73,7 +72,7 @@ const Navbar: FC = () => {
               <li>
                 <Link
                   to="/meskie"
-                  className="block hover:text-green-500 hover:bg-black focus:outline-none focus:text-green-500 focus:bg-black"
+                  className="block hover:text-limon hover:bg-black focus:outline-none focus:text-limon focus:bg-black"
                 >
                   Mężczyźni
                 </Link>
@@ -81,7 +80,7 @@ const Navbar: FC = () => {
               <li>
                 <Link
                   to="/kobiety"
-                  className="block hover:text-green-500 hover:bg-black focus:outline-none focus:text-green-500 focus:bg-black"
+                  className="block hover:text-limon hover:bg-black focus:outline-none focus:text-limon focus:bg-black"
                 >
                   Kobiety
                 </Link>
