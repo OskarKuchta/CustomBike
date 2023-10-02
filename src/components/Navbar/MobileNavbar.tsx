@@ -33,7 +33,7 @@ const NavLink: FC<NavLink> = ({ title, href, onClick }) => {
     >
       <Link
         to={href}
-        className="hover:text-purple-500 focus:text-purple-500 active:text-purple-500"
+        className="hover:text-limon focus:text-limon active:text-limon"
         onClick={onClick}
       >
         {title}

@@ -33,11 +33,7 @@ const Navbar: FC = () => {
         <div className="flex items-center gap-[1ch]">
           <img className="navbar-logo w-10 h-10" src={logo} alt="logo" />
 
-          <Link
-            to="/#home"
-            onFocus={handleLeaveList}
-            className="font-logoFont"
-          >
+          <Link to="/#home" onFocus={handleLeaveList} className="font-logoFont">
             CUSTOM BIKE
           </Link>
         </div>
@@ -48,9 +44,10 @@ const Navbar: FC = () => {
             onMouseLeave={handleMenuLeave}
           >
             <button
-              className="text-md transition-all duration-700 text-white py-4 px-12 focus:bg-white focus:outline-none focus:text-black hover:bg-white hover:outline-none hover:text-limo active:bg-white active:outline-none active:text-black "
+              className="text-md transition-all duration-700 text-white py-4 px-12 focus:bg-white focus:outline-none focus:text-black hover:bg-white hover:outline-none hover:text-black active:bg-white active:outline-none active:text-black "
               onClick={handleMenuClick}
               onFocus={handleMenuClick}
+              onTouchStart={handleMenuClick}
             >
               Modele{" "}
               {showArrow ? (
