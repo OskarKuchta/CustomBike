@@ -6,12 +6,10 @@ const Carousel = ({ data }) => {
   const [slide, setSlide] = useState(0);
 
   const nextSlide = () => {
-    console.log("click");
     setSlide(slide === data.length - 1 ? 0 : slide + 1);
   };
 
   const prevSlide = () => {
-    console.log("click");
     setSlide(slide === 0 ? data.length - 1 : slide - 1);
   };
 

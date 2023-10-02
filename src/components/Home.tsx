@@ -7,7 +7,7 @@ const Home: FC = () => {
   return (
     <section
       id="home"
-      className="home-container bg-no-repeat bg-cover filter brightness-90 z-[-1] flex flex-col text-center px-12 md:px-24 text-white items-center justify-center"
+      className="home-container bg-no-repeat bg-cover filter brightness-90 flex flex-col text-center px-12 md:px-48 text-white  items-center justify-center"
     >
       <h1 className="mb-10 text-2xl md:text-4xl">
         Witaj w miejscu, gdzie twoje marzenia rowerowe stają się

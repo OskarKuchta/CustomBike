@@ -83,7 +83,7 @@ const MobileNavbar: FC = () => {
   };
 
   return (
-    <header className="w-full fixed top-0">
+    <header className="w-full fixed top-0 z-10">
       <nav className="flex justify-between items-center py-2 px-6 bg-black text-white">
         <div className="flex items-center gap-[1ch]">
           <img className="navbar-logo w-12 h-12" src={logo} alt="logo" />
