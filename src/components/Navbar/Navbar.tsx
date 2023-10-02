@@ -1,11 +1,11 @@
 import { FC, useState, useRef } from "react";
 import { Link } from "react-router-dom";
 import logo from "../../assets/Photos/logo.jpg";
-import ArrowDownwardSharpIcon from "@mui/icons-material/ArrowDownwardSharp";
+import KeyboardDoubleArrowDownIcon from "@mui/icons-material/KeyboardDoubleArrowDown";
 const Navbar: FC = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [showArrow, setShowArrow] = useState(false);
-  const modelsListRef = useRef(null);
+  const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
+  const [showArrow, setShowArrow] = useState<boolean>(false);
+  const modelsListRef: React.MutableRefObject<HTMLUListElement> = useRef(null);
 
   const handleMenuClick = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -51,7 +51,7 @@ const Navbar: FC = () => {
             >
               Modele{" "}
               {showArrow ? (
-                <ArrowDownwardSharpIcon
+                <KeyboardDoubleArrowDownIcon
                   style={{
                     fontSize: "16px",
                     marginBottom: "3px",
