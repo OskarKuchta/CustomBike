@@ -1,7 +1,7 @@
 import { FC, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import logo from "../../assets/Photos/logo.jpg";
+import logo from "../../assets/Photos/logo.avif";
 const navLinks: NavLink[] = [
   { title: "Główna", href: "/#home" },
   { title: "Mężczyźni", href: "/meskie" },

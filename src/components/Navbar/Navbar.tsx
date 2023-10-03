@@ -1,6 +1,6 @@
 import { FC, useState, useRef } from "react";
 import { Link } from "react-router-dom";
-import logo from "../../assets/Photos/logo.jpg";
+import logo from "../../assets/Photos/logo.avif";
 import KeyboardDoubleArrowDownIcon from "@mui/icons-material/KeyboardDoubleArrowDown";
 const Navbar: FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
