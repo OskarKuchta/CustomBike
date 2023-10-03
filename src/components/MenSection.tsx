@@ -3,12 +3,9 @@ import { Link } from "react-router-dom";
 
 const MenSection: FC = () => {
   return (
-    <Link to="/meskie">
-      <section
-        id="men"
-        className="men-container relative z-[-1] flex items-center justify-center"
-      >
-        <h2 className=" absolute bottom-16 md:bottom-4 text-limon text-4xl lg:text-7xl tracking-wide">
+    <Link to="/meskie" className=" men-container w-full">
+      <section>
+        <h2 className=" absolute bottom-12 left-1/2 transform -translate-x-1/2 text-limon text-4xl lg:text-7xl tracking-wide">
           Mężczyźni
         </h2>
       </section>

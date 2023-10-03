@@ -29,6 +29,7 @@
 
 .arrow:hover {
   cursor: pointer;
+  color: lime;
 }
 
 .arrow-left {
@@ -57,6 +58,9 @@
   cursor: pointer;
 }
 
+.indicator:focus {
+  background-color: lime;
+}
 .indicator-inactive {
   background-color: grey;
 }

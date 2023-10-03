@@ -16,7 +16,10 @@ const Carousel = ({ data }: Data) => {
   return (
     <div className="carousel">
       <button onClick={prevSlide}>
-        <KeyboardArrowLeftIcon className="arrow arrow-left" />
+        <KeyboardArrowLeftIcon
+          className="arrow arrow-left"
+          aria-label="Poprzedni slajd"
+        />
       </button>
 
       {data.map((item: Image, idx: number) => {
@@ -30,7 +33,10 @@ const Carousel = ({ data }: Data) => {
         );
       })}
       <button onClick={nextSlide}>
-        <KeyboardArrowRightIcon className="arrow arrow-right" />
+        <KeyboardArrowRightIcon
+          className="arrow arrow-right "
+          aria-label="Następny slajd"
+        />
       </button>
 
       <span className="indicators">
@@ -42,7 +48,7 @@ const Carousel = ({ data }: Data) => {
                 slide === idx ? "indicator" : "indicator indicator-inactive"
               }
               onClick={() => setSlide(idx)}
-              onFocus={() => setSlide(idx)}
+              aria-label={`Przejdź do slajdu ${idx + 1}`}
             ></button>
           );
         })}
