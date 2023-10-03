@@ -3,8 +3,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  max-width: 450px;
-  height: 300px;
+  max-width: clamp(350px, 85vw, 700px);
+  max-height: clamp(200px, 50vh, 400px);
 }
 
 .slide {
@@ -53,7 +53,7 @@
   border: none;
   outline: none;
   box-shadow: 0px 0px 5px #555;
-  margin: 0 0.2rem;
+  margin: 0 0.4rem;
   cursor: pointer;
 }
 

@@ -1,9 +1,9 @@
 import { useState } from "react";
 import KeyboardArrowLeftIcon from "@mui/icons-material/KeyboardArrowLeft";
 import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
-
-const Carousel = ({ data }) => {
-  const [slide, setSlide] = useState(0);
+import { Image, Data } from "../Types/Carousel";
+const Carousel = ({ data }: Data) => {
+  const [slide, setSlide] = useState<number>(0);
 
   const nextSlide = () => {
     setSlide(slide === data.length - 1 ? 0 : slide + 1);
@@ -19,7 +19,7 @@ const Carousel = ({ data }) => {
         <KeyboardArrowLeftIcon className="arrow arrow-left" />
       </button>
 
-      {data.map((item, idx) => {
+      {data.map((item: Image, idx: number) => {
         return (
           <img
             src={item.src}
@@ -34,7 +34,7 @@ const Carousel = ({ data }) => {
       </button>
 
       <span className="indicators">
-        {data.map((_, idx) => {
+        {data.map((_: null, idx: number) => {
           return (
             <button
               key={idx}
