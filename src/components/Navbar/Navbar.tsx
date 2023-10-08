@@ -1,6 +1,5 @@
 import { FC, useState, useRef } from "react";
 import { Link } from "react-router-dom";
-import logo from "../../assets/Photos/logo.avif";
 import KeyboardDoubleArrowDownIcon from "@mui/icons-material/KeyboardDoubleArrowDown";
 const Navbar: FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
@@ -31,7 +30,7 @@ const Navbar: FC = () => {
     <header className="w-full absolute top-0 z-10">
       <nav className="flex justify-between items-center px-6 bg-black text-white">
         <div className="flex items-center gap-[1ch]">
-          <img className="navbar-logo w-10 h-10" src={logo} alt="logo" />
+          <img className="navbar-logo w-10 h-10" src="./logo.avif" alt="logo" />
 
           <Link to="/#home" onFocus={handleLeaveList} className="font-logoFont">
             CUSTOM BIKE

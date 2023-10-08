@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Fuggles&display=swap");
 @import url("./assets/CSS/Home.css");
 @import url("./assets/CSS/Personalize.css");
-@import url("./assets/CSS/Carousel.css");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

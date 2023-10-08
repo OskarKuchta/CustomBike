@@ -1,11 +1,11 @@
 .home-container {
-  background-image: url("../Photos/background.avif");
+  background-image: url("./background.avif");
 }
 .men-container {
-  background-image: url("../Photos/men-background.avif");
+  background-image: url("./men-background.avif");
 }
 .lady-container {
-  background-image: url("../Photos/ladies-background.avif");
+  background-image: url("./ladies-background.avif");
 }
 
 .men-container,
