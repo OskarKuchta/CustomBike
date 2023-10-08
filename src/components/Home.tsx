@@ -1,6 +1,5 @@
 import { FC } from "react";
-import Carousel from "./Carousel";
-import { slides } from "../data/carouselData.json";
+
 
 const Home: FC = () => {
   return (
@@ -12,7 +11,7 @@ const Home: FC = () => {
         Witaj w miejscu, gdzie twoje marzenia rowerowe stają się
         rzeczywistością!
       </h1>
-      <Carousel data={slides} />
+     
     </section>
   );
 };
