@@ -85,9 +85,9 @@ const MobileNavbar: FC = () => {
     <header className="w-full fixed top-0 z-10">
       <nav className="flex justify-between items-center py-2 px-6 bg-black text-white">
         <div className="flex items-center gap-[1ch]">
-          <img className="navbar-logo w-12 h-12" src="./logo.avif" alt="logo" />
-          <p className="text-sm font-semibold tracking-widest font-logoFont">
-            CUSTOM BIKE
+          <img className="navbar-logo w-16 h-14" src="./logo.jpg" alt="logo" />
+          <p className="text-base font-semibold tracking-widest font-logoFont">
+            Projekt Rower
           </p>
         </div>
         <div className="lg:hidden text-md text-white" onClick={toggleMenu}>
@@ -107,12 +107,12 @@ const MobileNavbar: FC = () => {
               <div className="flex justify-between items-center">
                 <div className="flex items-center">
                   <img
-                    className="navbar-logo w-8 h-8"
-                    src="./logo.avif"
+                    className="navbar-logo w-16 h-16"
+                    src="./logo.jpg"
                     alt="logo"
                   />
                   <p className="text-xl font-semibold tracking-widest text-white px-2 font-logoFont">
-                    Custom Bike
+                    Projekt rower
                   </p>
                 </div>
                 <p

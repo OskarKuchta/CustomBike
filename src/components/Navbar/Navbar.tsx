@@ -30,10 +30,10 @@ const Navbar: FC = () => {
     <header className="w-full absolute top-0 z-10">
       <nav className="flex justify-between items-center px-6 bg-black text-white">
         <div className="flex items-center gap-[1ch]">
-          <img className="navbar-logo w-10 h-10" src="./logo.avif" alt="logo" />
+          <img className="navbar-logo w-20 h-20" src="./logo.jpg" alt="logo" />
 
-          <Link to="/#home" onFocus={handleLeaveList} className="font-logoFont">
-            CUSTOM BIKE
+          <Link to="/#home" onFocus={handleLeaveList} className="font-logoFont text-2xl">
+            Projekt Rower
           </Link>
         </div>
         <div className="flex px-8">
