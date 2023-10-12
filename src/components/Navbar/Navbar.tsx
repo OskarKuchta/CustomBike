@@ -43,7 +43,7 @@ const Navbar: FC = () => {
             onMouseLeave={handleMenuLeave}
           >
             <button
-              className="text-md transition-all duration-700 text-white py-4 px-12 focus:bg-white focus:outline-none focus:text-black hover:bg-white hover:outline-none hover:text-black active:bg-white active:outline-none active:text-black "
+              className="text-md transition-all duration-700 text-white py-7 px-12 focus:bg-white focus:outline-none focus:text-black hover:bg-white hover:outline-none hover:text-black active:bg-white active:outline-none active:text-black "
               onClick={handleMenuClick}
               onFocus={handleMenuClick}
               onTouchStart={handleMenuClick}
@@ -86,13 +86,13 @@ const Navbar: FC = () => {
           <Link
             onFocus={handleLeaveList}
             to="/personalizacja"
-            className="text-md transition-all duration-700 text-white py-4 px-12 focus:bg-white focus:outline-none focus:text-black hover:bg-white hover:outline-none hover:text-black active:bg-white active:outline-none active:text-black"
+            className="text-md transition-all duration-700 text-white py-7 px-12 focus:bg-white focus:outline-none focus:text-black hover:bg-white hover:outline-none hover:text-black active:bg-white active:outline-none active:text-black"
           >
             Personalizacja
           </Link>
           <Link
             to="kontakt"
-            className="text-md transition-all duration-700 text-white py-4 px-12 focus:bg-white focus:outline-none focus:text-black hover:bg-white hover:outline-none hover:text-black active:bg-white active:outline-none active:text-black"
+            className="text-md transition-all duration-700 text-white py-7 px-12 focus:bg-white focus:outline-none focus:text-black hover:bg-white hover:outline-none hover:text-black active:bg-white active:outline-none active:text-black"
           >
             Kontakt
           </Link>
