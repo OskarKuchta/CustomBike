@@ -2,6 +2,8 @@
 @import url("./assets/CSS/Home.css");
 @import url("./assets/CSS/Personalize.css");
 @import url("./assets/CSS/MenWomen.css");
+@import "react-image-gallery/styles/css/image-gallery.css";
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -39,6 +41,17 @@ button {
 
 ::-webkit-scrollbar-thumb {
   background-color: lime;
+}
+
+.image-gallery {
+  margin-left: auto;
+  margin-right: auto;
+  width: clamp(250px, 70vw, 500px);
+  height: 200px;
+}
+
+.image-gallery-slide img {
+  width: 100%;
 }
 
 @media (min-width: 1600px) {
