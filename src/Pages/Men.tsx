@@ -1,10 +1,7 @@
 import { FC } from "react";
 import ImageGallery from "react-image-gallery";
+import { Images } from "../Types/Gallery";
 
-type Images = {
-  original: string;
-  thumbnail: string;
-};
 const images: Images[] = [
   {
     original: "/1.jpg",
@@ -28,10 +25,7 @@ const Men: FC = () => {
         Rowery, które emanują siłą i charakterem, idealne dla nowoczesnych
         mężczyzn, którzy cenią sobie styl i wyraźną prezencję.
       </h2>
-      <ImageGallery
-        items={images}
-      
-      />
+      <ImageGallery items={images} showFullscreenButton={false} />
     </section>
   );
 };

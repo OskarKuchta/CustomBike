@@ -53,6 +53,9 @@ button {
 .image-gallery-slide img {
   width: 100%;
 }
+.main-gallery img {
+  cursor: auto;
+}
 
 @media (min-width: 1600px) {
   html {

@@ -1,10 +1,6 @@
 import { FC } from "react";
 import ImageGallery from "react-image-gallery";
-
-type Images = {
-  original: string;
-  thumbnail: string;
-};
+import { Images } from "../Types/Gallery";
 
 const images: Images[] = [
   {
@@ -29,7 +25,7 @@ const Women: FC = () => {
         życia. Oferuję rowery w odcieniach, które podkreślają energię i
         indywidualność kobiet.
       </h2>
-      <ImageGallery items={images} />
+      <ImageGallery items={images} showFullscreenButton={false} />
     </section>
   );
 };
