@@ -1,35 +1,35 @@
-import { FC, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import ImageGallery from "react-image-gallery";
 import { Images, ImageGalleryProps } from "../Types/Gallery";
+import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 
-const images: Images[] = [
-  {
-    original: "/1.jpg",
-  },
-  {
-    original: "/2.jpg",
-  },
-  {
-    original: "/3.jpg",
-  },
-  {
-    original: "/4.jpg",
-  },
-  {
-    original: "/5.jpg",
-  },
-  {
-    original: "/6.jpg",
-  },
-  {
-    original: "/7.jpg",
-  },
-  {
-    original: "/8.jpg",
-  },
-];
-
-const Home: FC = () => {
+const Home = ({ onClick }) => {
+  const images: Images[] = [
+    {
+      original: "/1.jpg",
+    },
+    {
+      original: "/2.jpg",
+    },
+    {
+      original: "/3.jpg",
+    },
+    {
+      original: "/4.jpg",
+    },
+    {
+      original: "/5.jpg",
+    },
+    {
+      original: "/6.jpg",
+    },
+    {
+      original: "/7.jpg",
+    },
+    {
+      original: "/8.jpg",
+    },
+  ];
   const [playGallery, setPlayGallery] = useState<boolean>(true);
   const imageGalleryProps: ImageGalleryProps = {
     items: images,
@@ -67,6 +67,17 @@ const Home: FC = () => {
         rzeczywistością!
       </h1>
       <ImageGallery {...imageGalleryProps} />
+      <div
+        className="double-scroll-arrows-container cursor-pointer absolute bottom-5 right-[10%] "
+        onClick={onClick}
+      >
+        <div className="scroll-arrow">
+          <KeyboardArrowDownIcon className="scroll-arrow-icon stroke-limon" />
+        </div>
+        <div className="scroll-arrow">
+          <KeyboardArrowDownIcon className="scroll-arrow-icon stroke-limon" />
+        </div>
+      </div>
     </section>
   );
 };

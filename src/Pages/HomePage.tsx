@@ -37,7 +37,7 @@ const HomePage: FC = () => {
       setActiveIndex={setActiveIndex}
     >
       <FullpageSection>
-        <Home />
+        <Home onClick={() => setActiveIndex(1)} />
       </FullpageSection>
       <FullpageSection>
         <MenSection />
