@@ -49,10 +49,10 @@ button {
   width: clamp(250px, 70vw, 500px);
   height: 200px;
 }
-
-.image-gallery-slide img {
+.image-gallery img {
   width: 100%;
 }
+
 .main-gallery img {
   cursor: auto;
 }

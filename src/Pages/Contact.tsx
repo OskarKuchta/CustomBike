@@ -33,7 +33,7 @@ const Contact: FC = () => {
             .
           </h4>
         </div>
-        <div className="contact-mail mt-8 flex flex-col items-center w-full text-center">
+        <div className="contact-mail mt-8 flex flex-col items-center w-full text-center ">
           <Link
             className="hover:text-white focus:outline-none focus:text-white transition-all duration-500"
             to={`mailto:${emailAddress}?subject=${encodeURIComponent(subject)}`}
@@ -54,7 +54,8 @@ const Contact: FC = () => {
               )}`}
             >
               {emailAddress}
-            </Link>.
+            </Link>
+            .
           </h4>
         </div>
         <div className="contact-facebook mt-8 flex flex-col items-center w-full text-center">
@@ -70,13 +71,14 @@ const Contact: FC = () => {
             />
           </Link>
           <h4 className="md:px-8 mt-6">
-            Zapraszamy także do kontaktu przez Facebook, jedynie{" "}
+            Zapraszam także do kontaktu przez Facebook, wystarczy{" "}
             <Link
               to="https://www.facebook.com/oskar.kuchta.39/"
               className="hover:text-white focus:outline-none focus:text-white transition-all duration-500"
             >
-              kliknij tutaj
-            </Link>.
+              kliknąć tutaj
+            </Link>
+            .
           </h4>
         </div>
       </aside>

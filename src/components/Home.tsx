@@ -1,4 +1,4 @@
-import { FC } from "react";
+import { FC, useEffect, useState } from "react";
 import ImageGallery from "react-image-gallery";
 import { Images, ImageGalleryProps } from "../Types/Gallery";
 
@@ -29,18 +29,34 @@ const images: Images[] = [
   },
 ];
 
-const imageGalleryProps: ImageGalleryProps = {
-  items: images,
-  showThumbnails: false,
-  showFullscreenButton: false,
-  showPlayButton: false,
-  showBullets: false,
-  showIndex: false,
-  showNav: false,
-  autoPlay: true,
-  additionalClass: "main-gallery",
-};
 const Home: FC = () => {
+  const [playGallery, setPlayGallery] = useState<boolean>(true);
+  const imageGalleryProps: ImageGalleryProps = {
+    items: images,
+    showThumbnails: false,
+    showFullscreenButton: false,
+    showPlayButton: false,
+    showBullets: false,
+    showIndex: false,
+    showNav: false,
+    autoPlay: playGallery,
+    additionalClass: "main-gallery",
+  };
+  useEffect(() => {
+    const handleHashChange = () => {
+      const hash = window.location.hash;
+      if (hash === "#home") {
+        setPlayGallery(true);
+      } else {
+        setPlayGallery(false);
+      }
+    };
+    window.addEventListener("hashchange", handleHashChange);
+    handleHashChange();
+    return () => {
+      window.removeEventListener("hashchange", handleHashChange);
+    };
+  }, []);
   return (
     <section
       id="home"
