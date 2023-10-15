@@ -1,11 +1,11 @@
 .home-container {
-  background-image: url("./background.avif");
+  background-image: url("/background.avif");
 }
 .men-container {
-  background-image: url("./men-background.avif");
+  background-image: url("/men-background.avif");
 }
 .lady-container {
-  background-image: url("./ladies-background.avif");
+  background-image: url("/ladies-background.avif");
 }
 
 .men-container,
@@ -16,7 +16,7 @@
 
 .double-scroll-arrows-container {
   animation: bounce 4s infinite;
-  border: 2px solid rgb(208, 206, 206);
+  border: 2px solid rgb(0, 0, 0);
   padding: 0.3rem 0.6rem;
   border-radius: 50%;
 }
