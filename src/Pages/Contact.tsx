@@ -7,7 +7,7 @@ const Contact: FC = () => {
   const emailAddress: string = "abcde@gmail.com";
   const subject: string = "Pytania odnośnie produktów";
   return (
-    <section className="contact-page flex flex-col pt-32 items-center bg-neutral-800 text-limon h-screen">
+    <section className="contact-page flex flex-col pt-32 items-center black-background text-limon min-h-screen">
       <h2 className="text-4xl ">Kontakt ze mną:</h2>
       <aside className="contact-options flex flex-col md:flex-row w-4/5">
         <div className="contact-phone mt-8 flex flex-col items-center w-full text-center">
