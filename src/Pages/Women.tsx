@@ -19,8 +19,8 @@ const images: Images[] = [
 
 const Women: FC = () => {
   return (
-    <section className="men-women-section bg-pink-100 min-h-[130vh]">
-      <h2 className="pt-32 pb-16 px-8 md:px-32 md:w-4/5 lg:w-2/3 mx-auto text-center text-2xl text-red-900">
+    <section className="pink-background min-h-[130vh] flex flex-col items-center">
+      <h2 className="pt-32 pb-16 px-8 md:px-32 md:w-4/5 lg:w-2/3 mx-auto text-center text-base md:text-2xl text-yellow-600">
         Dla pań proponuję paletę kolorów, która jest bardziej jasna i pełna
         życia. Oferuję rowery w odcieniach, które podkreślają energię i
         indywidualność kobiet.

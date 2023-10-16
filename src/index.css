@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Fuggles&display=swap");
 @import url("./assets/CSS/Home.css");
-@import url("./assets/CSS/MenWomen.css");
 @import "react-image-gallery/styles/css/image-gallery.css";
 
 @tailwind base;
@@ -59,7 +58,10 @@ button {
 .black-background {
   background-image: url("/black-background.jpg");
 }
-
+.pink-background {
+  background-image: url("/pink-background.jpg");
+  background-size: cover;
+}
 @media (min-width: 1600px) {
   html {
     font-size: 22px;

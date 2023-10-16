@@ -3,9 +3,11 @@
 }
 .men-container {
   background-image: url("/men-background.avif");
+ 
 }
 .lady-container {
   background-image: url("/ladies-background.avif");
+ 
 }
 
 .men-container,
