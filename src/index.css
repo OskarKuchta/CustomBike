@@ -11,12 +11,16 @@ body {
   scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
 }
-
+#root {
+  height: 100vh;
+}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
+  scrollbar-color: lime black;
+  scrollbar-width: thin;
 }
 *::selection {
   background-color: rgb(8, 251, 0);
