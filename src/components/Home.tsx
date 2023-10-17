@@ -68,7 +68,7 @@ const Home = ({ onClick }) => {
       </h1>
       <ImageGallery {...imageGalleryProps} />
       <div
-        className="double-scroll-arrows-container cursor-pointer absolute bottom-5 right-[10%]"
+        className="double-scroll-arrows-container cursor-pointer absolute bottom-[10%] md:bottom-[5%] right-[10%]"
         onClick={onClick}
       >
         <div className="scroll-arrow">
