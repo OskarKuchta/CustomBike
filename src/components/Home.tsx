@@ -60,9 +60,9 @@ const Home = ({ onClick }) => {
   return (
     <section
       id="home"
-      className="home-container bg-[url('/background.avif')] bg-no-repeat bg-cover filter brightness-90 flex flex-col text-center px-[5%] md:px-[20%] text-white  items-center justify-center"
+      className="home-conatiner bg-[url('/background.avif')] bg-no-repeat bg-cover filter brightness-90 flex flex-col text-center px-[5%] md:px-[20%] text-white  items-center relative"
     >
-      <h1 className="mb-10 text-2xl md:text-4xl">
+      <h1 className="landscape-sm:mt-20 landscape-sm:mb-8 mt-32 mb-20 landscape-sm:text-xl text-2xl md:text-4xl">
         Witaj w miejscu, gdzie twoje marzenia rowerowe stają się
         rzeczywistością!
       </h1>

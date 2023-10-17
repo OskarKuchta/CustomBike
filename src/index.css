@@ -71,3 +71,8 @@ button {
     font-size: 22px;
   }
 }
+@media (max-width:900px) and (orientation: landscape) {
+  .image-gallery {
+    width: 200px;
+  }
+}

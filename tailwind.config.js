@@ -12,8 +12,11 @@ export default {
       colors: {
         limon: "#08FB00"
       },
-    },
+      screens: {
+        'landscape-sm': { 'raw': '(max-width: 800px) and (orientation: landscape)' },
+      },
   },
-  plugins: [],
+},
+plugins: [],
 }
 
