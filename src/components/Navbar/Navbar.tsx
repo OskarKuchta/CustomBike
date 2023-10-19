@@ -30,7 +30,7 @@ const Navbar: FC = () => {
     <header className="w-full absolute top-0 z-10">
       <nav className="flex justify-between items-center px-6 bg-black text-white">
         <div className="flex items-center gap-[1ch]">
-          <img className="navbar-logo w-20 h-20" src="./logo.jpg" alt="logo" />
+          <img className="navbar-logo w-20 h-[72px]" src="./logo.jpg" alt="logo" />
 
           <Link to="/#home" onFocus={handleLeaveList} className="font-logoFont text-2xl">
             Projekt Rower
@@ -43,7 +43,7 @@ const Navbar: FC = () => {
             onMouseLeave={handleMenuLeave}
           >
             <button
-              className="text-md transition-all duration-700 text-white py-7 px-12 focus:bg-white focus:outline-none focus:text-black hover:bg-white hover:outline-none hover:text-black active:bg-white active:outline-none active:text-black "
+              className="text-md transition-all duration-700 text-white py-6 px-12 focus:bg-white focus:outline-none focus:text-black hover:bg-white hover:outline-none hover:text-black active:bg-white active:outline-none active:text-black "
               onClick={handleMenuClick}
               onFocus={handleMenuClick}
               onTouchStart={handleMenuClick}
@@ -86,13 +86,13 @@ const Navbar: FC = () => {
           <Link
             onFocus={handleLeaveList}
             to="/personalizacja"
-            className="text-md transition-all duration-700 text-white py-7 px-12 focus:bg-white focus:outline-none focus:text-black hover:bg-white hover:outline-none hover:text-black active:bg-white active:outline-none active:text-black"
+            className="text-md transition-all duration-700 text-white py-6 px-12 focus:bg-white focus:outline-none focus:text-black hover:bg-white hover:outline-none hover:text-black active:bg-white active:outline-none active:text-black"
           >
             Personalizacja
           </Link>
           <Link
             to="kontakt"
-            className="text-md transition-all duration-700 text-white py-7 px-12 focus:bg-white focus:outline-none focus:text-black hover:bg-white hover:outline-none hover:text-black active:bg-white active:outline-none active:text-black"
+            className="text-md transition-all duration-700 text-white py-6 px-12 focus:bg-white focus:outline-none focus:text-black hover:bg-white hover:outline-none hover:text-black active:bg-white active:outline-none active:text-black"
           >
             Kontakt
           </Link>

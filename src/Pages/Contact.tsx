@@ -22,7 +22,7 @@ const Contact: FC = () => {
           animate={{
             opacity: 1,
             y: 0,
-            transition: { duration: 1, delay: 1 },
+            transition: { duration: .65, delay: 1 },
           }}
           className="contact-phone mt-8 flex flex-col items-center w-full text-center"
         >
@@ -54,7 +54,7 @@ const Contact: FC = () => {
           animate={{
             opacity: 1,
             y: 0,
-            transition: { duration: 1, delay: 2 },
+            transition: { duration: .65, delay: 2 },
           }}
           className="contact-mail mt-8 flex flex-col items-center w-full text-center"
         >
@@ -88,7 +88,7 @@ const Contact: FC = () => {
           animate={{
             opacity: 1,
             y: 0,
-            transition: { duration: 1, delay: 3 },
+            transition: { duration: .65, delay: 3 },
           }}
           className="contact-facebook mt-8 flex flex-col items-center w-full text-center"
         >
