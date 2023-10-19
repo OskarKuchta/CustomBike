@@ -66,12 +66,13 @@ button {
   background-image: url("/pink-background.jpg");
   background-size: cover;
 }
+
 @media (min-width: 1600px) {
   html {
     font-size: 22px;
   }
 }
-@media (max-width:900px) and (orientation: landscape) {
+@media (max-width: 900px) and (orientation: landscape) {
   .image-gallery {
     width: 200px;
   }

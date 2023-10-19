@@ -1,11 +1,12 @@
 import { FC, useState, useEffect } from "react";
 import Home from "../components/Home";
-import MenSection from "../components/MenSection";
-import WomenSection from "../components/WomenSection";
+import MenSection from "../components/MainSections/MenSection";
+import WomenSection from "../components/MainSections/WomenSection";
 import {
   FullpageContainer,
   FullpageSection,
 } from "@shinyongjun/react-fullpage";
+import PersonalizeSection from "../components/MainSections/PersonalizeSection";
 
 const HomePage: FC = () => {
   const [activeIndex, setActiveIndex] = useState<number>(0);
@@ -44,6 +45,9 @@ const HomePage: FC = () => {
       </FullpageSection>
       <FullpageSection>
         <WomenSection />
+      </FullpageSection>
+      <FullpageSection>
+        <PersonalizeSection />
       </FullpageSection>
     </FullpageContainer>
   );

@@ -1,8 +1,10 @@
 .men-container,
-.lady-container {
+.lady-container,
+.personalize-background {
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
+
 
 .double-scroll-arrows-container {
   animation: bounce 4s infinite;
@@ -47,5 +49,12 @@
     background-size: cover;
     background-position: center;
   }
+  .personalize-background {
+    background-image: url("/personalize-background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .personalize-background {
+    background-position: 10%;
+  }
 }
-
