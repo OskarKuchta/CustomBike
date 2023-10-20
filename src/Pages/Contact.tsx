@@ -4,12 +4,17 @@ import PhoneInTalkIcon from "@mui/icons-material/PhoneInTalk";
 import MailOutlineIcon from "@mui/icons-material/MailOutline";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import { motion } from "framer-motion";
+
 const Contact: FC = () => {
   const emailAddress: string = "abcde@gmail.com";
   const subject: string = "Pytania odnośnie produktów";
   const fadeInAnimation = {
     hidden: { opacity: 0, y: -40 },
     visible: { opacity: 1, y: 0, transition: { duration: 1 } },
+  };
+  const slideUpAnimation = {
+    hidden: { opacity: 0, y: 40 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.65, delay: 4 } },
   };
 
   return (
@@ -22,7 +27,7 @@ const Contact: FC = () => {
           animate={{
             opacity: 1,
             y: 0,
-            transition: { duration: .65, delay: 1 },
+            transition: { duration: 0.65, delay: 1 },
           }}
           className="contact-phone mt-8 flex flex-col items-center w-full text-center"
         >
@@ -54,7 +59,7 @@ const Contact: FC = () => {
           animate={{
             opacity: 1,
             y: 0,
-            transition: { duration: .65, delay: 2 },
+            transition: { duration: 0.65, delay: 2 },
           }}
           className="contact-mail mt-8 flex flex-col items-center w-full text-center"
         >
@@ -88,7 +93,7 @@ const Contact: FC = () => {
           animate={{
             opacity: 1,
             y: 0,
-            transition: { duration: .65, delay: 3 },
+            transition: { duration: 0.65, delay: 3 },
           }}
           className="contact-facebook mt-8 flex flex-col items-center w-full text-center"
         >
@@ -115,6 +120,20 @@ const Contact: FC = () => {
           </h4>
         </motion.div>
       </aside>
+      <motion.div
+        variants={slideUpAnimation}
+        initial="hidden"
+        animate="visible"
+        className="contact-phone mt-8 flex flex-col items-center w-full text-center"
+      >
+        <iframe
+          className=" mx-32 my-16"
+          src="https://maps.google.com/maps?q=Nidzica,%20Ogrodowa%205&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=&amp;output=embed"
+          style={{ width: "clamp(250px,80vw, 600px)", height: "400px" }}
+          allowFullScreen
+          title="Nidzica Map"
+        ></iframe>
+      </motion.div>
     </section>
   );
 };
