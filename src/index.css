@@ -60,7 +60,15 @@ button {
 }
 
 .black-background {
-  background-image: url("/black-background.jpg");
+  background-image: url(/black-background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 100vh;
+  z-index: -1;
 }
 .pink-background {
   background-image: url("/pink-background.jpg");
