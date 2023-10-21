@@ -15,8 +15,11 @@ export default {
       screens: {
         'landscape-sm': { 'raw': '(max-width: 800px) and (orientation: landscape)' },
       },
+      width: {
+        'personalize-div': 'clamp(300px, 30vw, 400px)',
+      },
+    },
   },
-},
-plugins: [],
+  plugins: [],
 }
 
