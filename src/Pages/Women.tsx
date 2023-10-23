@@ -25,7 +25,11 @@ const Women: FC = () => {
         życia. Oferuję rowery w odcieniach, które podkreślają energię i
         indywidualność kobiet.
       </h2>
-      <ImageGallery items={images} showFullscreenButton={false} />
+      <ImageGallery
+        items={images}
+        showFullscreenButton={false}
+        additionalClass="custom-women-image-gallery"
+      />
     </section>
   );
 };

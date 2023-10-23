@@ -27,7 +27,11 @@ const Men: FC = () => {
           Rowery, które emanują siłą i charakterem, idealne dla nowoczesnych
           mężczyzn, którzy cenią sobie styl i wyraźną prezencję.
         </h2>
-        <ImageGallery items={images} showFullscreenButton={false} />
+        <ImageGallery
+          items={images}
+          showFullscreenButton={false}
+          additionalClass="custom-men-image-gallery"
+        />
       </section>
     </>
   );

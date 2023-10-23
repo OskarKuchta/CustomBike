@@ -47,7 +47,7 @@ const Personalize: FC = () => {
             <h2 className="ml-6 text-2xl sm:text-3xl">Kierownica</h2>
           </motion.div>
           <motion.div
-            className="mx-auto md:mt-3 mb-6 flex justify-center items-center bg-opacity-90 bg-gray-800 p-8 border border-opacity-30 rounded-xl w-4/5 md:w-personalize-div"
+            className="mx-auto lg:mt-3 mb-6 flex justify-center items-center bg-opacity-90 bg-gray-800 p-8 border border-opacity-30 rounded-xl w-4/5 md:w-personalize-div"
             initial="hidden"
             animate={{
               opacity: 1,
@@ -60,7 +60,7 @@ const Personalize: FC = () => {
             <h2 className="ml-6 text-2xl sm:text-3xl">Łańcuchy</h2>
           </motion.div>
           <motion.div
-            className="mx-auto md:mt-6 mb-6 flex justify-center items-center bg-opacity-90 bg-gray-800 p-8 border border-opacity-30 rounded-xl w-4/5 md:w-personalize-div"
+            className="mx-auto lg:mt-6 mb-6 flex justify-center items-center bg-opacity-90 bg-gray-800 p-8 border border-opacity-30 rounded-xl w-4/5 md:w-personalize-div"
             initial="hidden"
             animate={{
               opacity: 1,
@@ -86,7 +86,7 @@ const Personalize: FC = () => {
             <h2 className="ml-6 text-2xl sm:text-3xl">Siodełka</h2>
           </motion.div>
           <motion.div
-            className="mx-auto md:mt-6 mb-6 flex justify-center items-center bg-opacity-90 bg-gray-800 p-8 border border-opacity-30 rounded-xl w-4/5 md:w-personalize-div"
+            className="mx-auto lg:mt-6 mb-6 flex justify-center items-center bg-opacity-90 bg-gray-800 p-8 border border-opacity-30 rounded-xl w-4/5 md:w-personalize-div"
             initial="hidden"
             animate={{
               opacity: 1,
@@ -99,7 +99,7 @@ const Personalize: FC = () => {
             <h2 className="ml-6 text-2xl sm:text-3xl">Pedały</h2>
           </motion.div>
           <motion.div
-            className="mx-auto md:mt-12 mb-6 flex justify-center items-center bg-opacity-90 bg-gray-800 p-8 border border-opacity-30 rounded-xl w-4/5 md:w-personalize-div"
+            className="mx-auto lg:mt-12 mb-6 flex justify-center items-center bg-opacity-90 bg-gray-800 p-8 border border-opacity-30 rounded-xl w-4/5 md:w-personalize-div"
             initial="hidden"
             animate={{
               opacity: 1,
