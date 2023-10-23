@@ -8,15 +8,14 @@ import { motion } from "framer-motion";
 const Contact: FC = () => {
   const emailAddress: string = "abcde@gmail.com";
   const subject: string = "Pytania odnośnie produktów";
-  const fadeInAnimation = {
-    hidden: { opacity: 0, y: -40 },
-    visible: { opacity: 1, y: 0, transition: { duration: 1 } },
+  const createAnimationObject = (y: number) => {
+    return {
+      hidden: { opacity: 0, y: y },
+      visible: { opacity: 1, y: 0 },
+    };
   };
-  const slideUpAnimation = {
-    hidden: { opacity: 0, y: 40 },
-    visible: { opacity: 1, y: 0, transition: { duration: 0.65, delay: 4 } },
-  };
-
+  const fadeInAnimation = createAnimationObject(-40);
+  const slideUpAnimation = createAnimationObject(40);
   return (
     <>
       <div className="black-background"></div>
@@ -127,7 +126,11 @@ const Contact: FC = () => {
         <motion.div
           variants={slideUpAnimation}
           initial="hidden"
-          animate="visible"
+          animate={{
+            opacity: 1,
+            y: 0,
+            transition: { duration: 0.65, delay: 4 },
+          }}
           className="contact-phone mt-8 flex flex-col items-center w-full text-center"
         >
           <iframe

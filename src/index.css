@@ -74,6 +74,15 @@ button {
   background-image: url("/pink-background.jpg");
   background-size: cover;
 }
+.personalize-link .arrow-icon {
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.personalize-link:hover .arrow-icon,
+.personalize-link:focus .arrow-icon {
+  opacity: 1;
+}
 
 @media (min-width: 1600px) {
   html {
