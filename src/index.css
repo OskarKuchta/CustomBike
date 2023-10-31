@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Fuggles&display=swap");
 @import url("./assets/Home.css");
-@import "react-image-gallery/styles/css/image-gallery.css";
 
 @tailwind base;
 @tailwind components;
@@ -45,24 +44,6 @@ button {
   background-color: lime;
 }
 
-.image-gallery {
-  margin-left: auto;
-  margin-right: auto;
-  width: clamp(250px, 70vw, 500px);
-  height: 200px;
-}
-.image-gallery img {
-  width: 100%;
-}
-
-.main-gallery img {
-  cursor: auto;
-}
-.custom-image-gallery svg:nth-child(1) {
-  height: 4rem;
-  color: rgb(114, 253, 0);
-}
-
 .black-background {
   background-image: url(/black-background.jpg);
   background-repeat: no-repeat;
@@ -75,8 +56,9 @@ button {
   z-index: -1;
 }
 .pink-background {
-  background-image: url("/pink-background.jpg");
-  background-size: cover;
+  background-image: url("/public/side-wave_background.jpg");
+  background-repeat: no-repeat;
+  min-height: 100vh;
 }
 .personalize-link .arrow-icon {
   opacity: 0;
@@ -91,10 +73,5 @@ button {
 @media (min-width: 1600px) {
   html {
     font-size: 22px;
-  }
-}
-@media (max-width: 900px) and (orientation: landscape) {
-  .image-gallery {
-    width: 200px;
   }
 }
