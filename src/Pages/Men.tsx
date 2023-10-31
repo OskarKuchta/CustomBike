@@ -4,12 +4,12 @@ import { Images } from "../Types/Gallery";
 
 const images: Images[] = [
   {
-    original: "/1.jpg",
-    thumbnail: "/1.jpg",
-  },
-  {
     original: "/2.jpg",
     thumbnail: "/2.jpg",
+  },
+  {
+    original: "/1.jpg",
+    thumbnail: "/1.jpg",
   },
   {
     original: "/3.jpg",
@@ -30,7 +30,8 @@ const Men: FC = () => {
         <ImageGallery
           items={images}
           showFullscreenButton={false}
-          additionalClass="custom-men-image-gallery"
+          showNav={false}
+          additionalClass="custom-image-gallery"
         />
       </section>
     </>

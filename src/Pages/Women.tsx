@@ -28,7 +28,8 @@ const Women: FC = () => {
       <ImageGallery
         items={images}
         showFullscreenButton={false}
-        additionalClass="custom-women-image-gallery"
+        showNav={false}
+        additionalClass="custom-image-gallery"
       />
     </section>
   );

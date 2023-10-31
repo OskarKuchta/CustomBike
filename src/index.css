@@ -58,14 +58,11 @@ button {
 .main-gallery img {
   cursor: auto;
 }
-.custom-men-image-gallery svg:nth-child(1) {
+.custom-image-gallery svg:nth-child(1) {
   height: 4rem;
-  color: rgb(94, 246, 0);
+  color: rgb(114, 253, 0);
 }
-.custom-women-image-gallery svg:nth-child(1) {
-  height: 4rem;
-  color: rgb(199, 151, 5);
-}
+
 .black-background {
   background-image: url(/black-background.jpg);
   background-repeat: no-repeat;
