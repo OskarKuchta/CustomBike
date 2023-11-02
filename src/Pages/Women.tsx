@@ -1,4 +1,4 @@
-import { FC, useEffect } from "react";
+import { FC } from "react";
 import ContactSubpage from "../components/ContactSubpage";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
@@ -8,13 +8,6 @@ const Women: FC = () => {
     triggerOnce: true,
     threshold: 1,
   });
-  useEffect(() => {
-    if (inView) {
-      console.log("true");
-    } else {
-      console.log("false");
-    }
-  }, [inView]);
   return (
     <section className="pink-background flex flex-col items-center lg:items-start bg-[#E9EAEB]">
       <h2 className="pt-80 lg:pt-60 pb-12 text-center w-3/4 lg:w-1/2 text-2xl sm:text-3xl lg:ml-32 lg:text-4xl text-purple-900">
