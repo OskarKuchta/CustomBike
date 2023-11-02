@@ -1,5 +1,5 @@
 import { FC, useState, useEffect } from "react";
-import Home from "../components/Home";
+import Home from "../components/MainSections/Home";
 import MenSection from "../components/MainSections/MenSection";
 import WomenSection from "../components/MainSections/WomenSection";
 import {

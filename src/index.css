@@ -56,7 +56,7 @@ button {
   z-index: -1;
 }
 .pink-background {
-  background-image: url("/public/side-wave_background.jpg");
+  background-image: url("/side-wave_background.jpg");
   background-repeat: no-repeat;
   min-height: 100vh;
 }
