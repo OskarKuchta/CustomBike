@@ -54,8 +54,8 @@ const App: FC = () => {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/personalizacja" element={<Personalize />} />
-        <Route path="/meskie" element={<Men />} />
-        <Route path="/kobiety" element={<Women />} />
+        <Route path="/rowery-meskie" element={<Men />} />
+        <Route path="/rowery-damskie" element={<Women />} />
         <Route path="/kontakt" element={<Contact />} />
         <Route path="*" element={<NotExist />} />
       </Routes>

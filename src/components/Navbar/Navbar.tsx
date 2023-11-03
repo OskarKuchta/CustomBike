@@ -31,7 +31,7 @@ const Navbar: FC = () => {
       <nav className="flex justify-between items-center px-6 bg-black text-white">
         <div className="flex items-center gap-[1ch]">
           <img
-            className="navbar-logo w-20 h-[72px]"
+            className="navbar-logo w-[72px] h-[72px]"
             src="./logo.jpg"
             alt="logo"
           />
@@ -57,8 +57,8 @@ const Navbar: FC = () => {
               onTouchStart={handleMenuClick}
               style={{
                 backgroundColor:
-                  location.pathname.includes("/meskie") ||
-                  location.pathname.includes("/kobiety")
+                  location.pathname.includes("/rowery-meskie") ||
+                  location.pathname.includes("/rowery-damskie")
                     ? "lime"
                     : "",
               }}
@@ -82,7 +82,7 @@ const Navbar: FC = () => {
             >
               <li>
                 <NavLink
-                  to="/meskie"
+                  to="/rowery-meskie"
                   className="block hover:text-limon hover:bg-black focus:outline-none focus:text-limon focus:bg-black"
                   onClick={() => setIsMenuOpen(!isMenuOpen)}
                 >
@@ -91,7 +91,7 @@ const Navbar: FC = () => {
               </li>
               <li>
                 <NavLink
-                  to="/kobiety"
+                  to="/rowery-damskie"
                   className="block hover:text-limon hover:bg-black focus:outline-none focus:text-limon focus:bg-black"
                   onClick={() => setIsMenuOpen(!isMenuOpen)}
                 >

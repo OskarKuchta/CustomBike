@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 const WomenSection: FC = () => {
   return (
     <Link
-      to="/kobiety"
+      to="/rowery-damskie"
       className="bg-[url('/ladies-background.avif')] w-full lady-container landscape-sm:mt-[72px]"
     >
       <section>

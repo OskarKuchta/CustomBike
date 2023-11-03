@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const MenSection: FC = () => {
   return (
     <Link
-      to="/meskie"
+      to="/rowery-meskie"
       className="men-container bg-[url('/men-background.avif')] w-full landscape-sm:mt-[72px] "
     >
       <section>
