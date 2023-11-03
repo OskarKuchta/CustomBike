@@ -1,5 +1,5 @@
 import { FC, useState, useRef } from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import KeyboardDoubleArrowDownIcon from "@mui/icons-material/KeyboardDoubleArrowDown";
 const Navbar: FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
@@ -36,13 +36,13 @@ const Navbar: FC = () => {
             alt="logo"
           />
 
-          <Link
+          <NavLink
             to="/#home"
             onFocus={handleLeaveList}
             className="font-logoFont text-2xl"
           >
             Projekt Rower
-          </Link>
+          </NavLink>
         </div>
         <div className="flex px-8">
           <div
@@ -55,6 +55,13 @@ const Navbar: FC = () => {
               onClick={handleMenuClick}
               onFocus={handleMenuClick}
               onTouchStart={handleMenuClick}
+              style={{
+                backgroundColor:
+                  location.pathname.includes("/meskie") ||
+                  location.pathname.includes("/kobiety")
+                    ? "lime"
+                    : "",
+              }}
             >
               Modele{" "}
               {showArrow ? (
@@ -74,38 +81,48 @@ const Navbar: FC = () => {
               } absolute left-0 right-0 text-center space-y-2 bg-white text-black border border-gray-300  z-10 models-list`}
             >
               <li>
-                <Link
+                <NavLink
                   to="/meskie"
                   className="block hover:text-limon hover:bg-black focus:outline-none focus:text-limon focus:bg-black"
                   onClick={() => setIsMenuOpen(!isMenuOpen)}
                 >
                   Mężczyźni
-                </Link>
+                </NavLink>
               </li>
               <li>
-                <Link
+                <NavLink
                   to="/kobiety"
                   className="block hover:text-limon hover:bg-black focus:outline-none focus:text-limon focus:bg-black"
                   onClick={() => setIsMenuOpen(!isMenuOpen)}
                 >
                   Kobiety
-                </Link>
+                </NavLink>
               </li>
             </ul>
           </div>
-          <Link
+          <NavLink
             onFocus={handleLeaveList}
             to="/personalizacja"
             className="text-md transition-all duration-700 text-white py-6 px-12 focus:bg-white focus:outline-none focus:text-black hover:bg-white hover:outline-none hover:text-black active:bg-white active:outline-none active:text-black"
+            style={{
+              backgroundColor: location.pathname.includes("/personalizacja")
+                ? "lime"
+                : "",
+            }}
           >
             Personalizacja
-          </Link>
-          <Link
-            to="kontakt"
-            className="text-md transition-all duration-700 text-white py-6 px-12 focus:bg-white focus:outline-none focus:text-black hover:bg-white hover:outline-none hover:text-black active:bg-white active:outline-none active:text-black"
+          </NavLink>
+          <NavLink
+            to="/kontakt"
+            className="text-md transition-all duration-700 text-white py-6 px-12 focus:bg-white focus:outline-none focus:text-black hover:bg-white hover:outline-none hover:text-black active:outline-none active:text-black"
+            style={{
+              backgroundColor: location.pathname.includes("/kontakt")
+                ? "lime"
+                : "",
+            }}
           >
             Kontakt
-          </Link>
+          </NavLink>
         </div>
       </nav>
     </header>
