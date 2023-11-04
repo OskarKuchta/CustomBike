@@ -3,7 +3,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import { Link } from "react-router-dom";
 const navLinks: NavLink[] = [
   { title: "Główna", href: "/#home" },
-  { title: "Mężczyźni", href: "/rowey-meskie" },
+  { title: "Mężczyźni", href: "/rowery-meskie" },
   { title: "Kobiety", href: "/rowery-damskie" },
   { title: "Personalizacja", href: "/personalizacja" },
   { title: "Kontakt", href: "/kontakt" },
