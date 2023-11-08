@@ -10,7 +10,8 @@ export default {
         logoFont: ['Fuggles']
       },
       colors: {
-        mainColor: "#08FB00"
+        mainColor: "#FFD700",
+        lime: "#08FB00",
       },
       screens: {
         'landscape-sm': { 'raw': '(max-width: 800px) and (orientation: landscape)' },

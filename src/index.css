@@ -18,11 +18,11 @@ body {
   padding: 0;
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
-  scrollbar-color: lime black;
+  scrollbar-color: #ffd700 black;
   scrollbar-width: thin;
 }
 *::selection {
-  background-color: rgb(8, 251, 0);
+  background-color: #ffd700;
   color: rgb(4, 4, 4);
 }
 body {
@@ -41,7 +41,7 @@ button {
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: lime;
+  background-color: #ffd700;
 }
 
 .black-background {

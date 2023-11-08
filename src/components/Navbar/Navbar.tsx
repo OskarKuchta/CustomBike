@@ -59,7 +59,7 @@ const Navbar: FC = () => {
                 backgroundColor:
                   location.pathname.includes("/rowery-meskie") ||
                   location.pathname.includes("/rowery-damskie")
-                    ? "lime"
+                    ? "#FFD700"
                     : "",
               }}
             >
@@ -106,7 +106,7 @@ const Navbar: FC = () => {
             className="text-md transition-all duration-700 text-white py-6 px-12 focus:bg-white focus:outline-none focus:text-black hover:bg-white hover:outline-none hover:text-black active:bg-white active:outline-none active:text-black"
             style={{
               backgroundColor: location.pathname.includes("/personalizacja")
-                ? "lime"
+                ? "#FFD700"
                 : "",
             }}
           >
@@ -117,7 +117,7 @@ const Navbar: FC = () => {
             className="text-md transition-all duration-700 text-white py-6 px-12 focus:bg-white focus:outline-none focus:text-black hover:bg-white hover:outline-none hover:text-black active:outline-none active:text-black"
             style={{
               backgroundColor: location.pathname.includes("/kontakt")
-                ? "lime"
+                ? "#FFD700"
                 : "",
             }}
           >

@@ -9,7 +9,7 @@ export const SteeringWheelIcon = () => {
       y="0px"
       width="52px"
       height="52px"
-      fill="lime"
+      fill="#FFD700"
     >
       <g data-name="15 Stem High">
         <g>
@@ -30,7 +30,7 @@ export const ChainIcon = () => {
     <svg
       width="48px"
       height="48px"
-      fill="lime"
+      fill="#FFD700"
       version="1.1"
       x="0px"
       y="0px"
@@ -51,7 +51,7 @@ export const ChainIcon = () => {
 export const WheelIcon = () => {
   return (
     <svg
-      fill="lime"
+      fill="#FFD700"
       height="48px"
       width="36px"
       version="1.1"
@@ -99,7 +99,7 @@ export const SaddleIcon = () => {
       version="1.1"
       height="48px"
       width="48px"
-      fill="lime"
+      fill="#FFD700"
     >
       <g id="layer1" transform="translate(0 -952.36)">
         <path
@@ -128,7 +128,7 @@ export const PedalIcon = () => {
       y="0px"
       width="48px"
       height="48px"
-      fill="lime"
+      fill="#FFD700"
       fillRule="evenodd"
       clipRule="evenodd"
     >
@@ -148,7 +148,7 @@ export const DerailleurIcon = () => {
       y="0px"
       height="48px"
       width="48px"
-      fill="lime"
+      fill="#FFD700"
       viewBox="0 0 504 609.9649999999999"
     >
       <g>

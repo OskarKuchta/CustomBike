@@ -53,8 +53,7 @@
     background-image: url("/personalize-background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-  }
-  .personalize-background {
-    background-position: 10%;
+    background-position: 45%;
+    
   }
 }
