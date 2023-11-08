@@ -30,7 +30,7 @@ const Women: FC = () => {
         ref={inViewRef}
         className="mx-auto lg:ml-auto lg:mr-52 xl:mr-72 w-[350px] max-w-[90vw]"
       >
-        <img src="/8.jpg" className="rounded-lg" alt="Dziewczyna na rowerze" />
+        <img src="/women-bicycle.jpg" className="rounded-lg" alt="Dziewczyna na rowerze" />
       </motion.div>
       <ContactSubpage
         genderType="zainteresowana"

@@ -5,10 +5,10 @@ const MenSection: FC = () => {
   return (
     <Link
       to="/rowery-meskie"
-      className="men-container bg-[url('/men-background.avif')] w-full landscape-sm:mt-[72px] "
+      className="men-container bg-[url('/menSection-background.avif')] w-full landscape-sm:mt-[72px] "
     >
       <section>
-        <h2 className=" absolute landscape-sm:bottom-8 bottom-16 left-1/2 transform -translate-x-1/2 text-limon text-4xl lg:text-7xl tracking-wide">
+        <h2 className=" absolute landscape-sm:bottom-8 bottom-16 md:bottom-8 left-1/2 transform -translate-x-1/2 text-mainColor text-4xl lg:text-7xl tracking-wide">
           Mężczyźni
         </h2>
       </section>

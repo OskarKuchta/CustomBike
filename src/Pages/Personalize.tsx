@@ -27,7 +27,7 @@ const Personalize: FC = () => {
   return (
     <>
       <div className="black-background"></div>
-      <section className="flex flex-col min-h-screen text-limon">
+      <section className="flex flex-col min-h-screen text-mainColor">
         <h2 className="mt-32 mb-16  text-xl md:text-2xl text-center mx-[10%]">
           Oferuję szeroką gamę personalizacji, abyś mógł / mogła dostosować moje
           produkty do swojego unikalnego stylu i preferencji.
@@ -127,7 +127,7 @@ const Personalize: FC = () => {
             zapraszam do kontaktu.
           </h3>
           <Link
-            className=" text-center mx-auto mt-6 bg-limon text-black pr-6 pl-10 py-2 rounded-md text-2xl
+            className=" text-center mx-auto mt-6 bg-mainColor text-black pr-6 pl-10 py-2 rounded-md text-2xl
              hover:text-white focus:text-white  focus:outline-none personalize-link"
             to="/kontakt"
             onClick={handleClick}

@@ -33,7 +33,7 @@ const Men: FC = () => {
           className="w-[550px] max-w-[90vw]"
         >
           <img
-            src="/5.jpg"
+            src="/men-bicycle.jpg"
             className="rounded-lg w-full"
             alt="Dziewczyna na rowerze"
           />

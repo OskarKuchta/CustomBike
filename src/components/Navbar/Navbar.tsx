@@ -83,7 +83,7 @@ const Navbar: FC = () => {
               <li>
                 <NavLink
                   to="/rowery-meskie"
-                  className="block hover:text-limon hover:bg-black focus:outline-none focus:text-limon focus:bg-black"
+                  className="block hover:text-mainColor hover:bg-black focus:outline-none focus:text-mainColor focus:bg-black"
                   onClick={() => setIsMenuOpen(!isMenuOpen)}
                 >
                   Mężczyźni
@@ -92,7 +92,7 @@ const Navbar: FC = () => {
               <li>
                 <NavLink
                   to="/rowery-damskie"
-                  className="block hover:text-limon hover:bg-black focus:outline-none focus:text-limon focus:bg-black"
+                  className="block hover:text-mainColor hover:bg-black focus:outline-none focus:text-mainColor focus:bg-black"
                   onClick={() => setIsMenuOpen(!isMenuOpen)}
                 >
                   Kobiety
