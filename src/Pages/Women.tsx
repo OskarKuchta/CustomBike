@@ -10,7 +10,7 @@ const Women: FC = () => {
   });
   return (
     <section className="pink-background flex flex-col items-center lg:items-start bg-[#E9EAEB]">
-      <h2 className="pt-80 lg:pt-60 pb-12 text-center w-3/4 lg:w-1/2 text-2xl sm:text-3xl lg:ml-32 lg:text-4xl text-purple-900">
+      <h2 className="pt-80 lg:pt-60 pb-12 text-center w-3/4 lg:w-1/2 text-2xl sm:text-3xl lg:ml-36 lg:text-4xl text-purple-900">
         Dla pań proponuję paletę kolorów, która jest bardziej jasna i pełna
         życia. Oferuję rowery w odcieniach, które podkreślają energię i
         indywidualność kobiet.

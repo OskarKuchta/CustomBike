@@ -83,9 +83,9 @@ const MobileNavbar: FC = () => {
 
   return (
     <header className="w-full fixed top-0 z-10">
-      <nav className="flex justify-between items-center py-2 px-6 bg-black text-white">
-        <div className="flex items-center gap-[1ch]">
-          <img className="navbar-logo w-14 h-14" src="/logo.jpg" alt="logo" />
+      <nav className="flex justify-between items-center px-6 bg-black text-white">
+        <div className="flex items-center">
+          <img className="navbar-logo w-16 h-16" src="/logo.jpg" alt="logo" />
           <p className="text-base font-semibold tracking-widest font-logoFont">
             Projekt Rower
           </p>

@@ -21,7 +21,7 @@ const ContactSubpage: FC<ContactSubpage> = ({
   return (
     <>
       <h2
-        className={`mt-12 text-center mx-auto text-base sm:text-2xl w-1/2 lg:text-4xl ${textColor}`}
+        className={`mt-12 text-center mx-auto text-base sm:text-2xl w-2/3 md:w-1/2 lg:text-4xl ${textColor}`}
       >
         Jeżeli jesteś {genderType} tym jak możemy dopasować rower do Twojego
         stylu zapraszam do kontaktu.
