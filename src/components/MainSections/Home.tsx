@@ -36,7 +36,7 @@ const Home = ({ onClick }) => {
           },
           particles: {
             color: {
-              value: "#ffffff",
+              value: "#FFD700",
             },
             links: {
               color: "transparent",
@@ -52,7 +52,7 @@ const Home = ({ onClick }) => {
                 default: "bounce",
               },
               random: false,
-              speed: 3,
+              speed: 2,
               straight: false,
             },
             number: {
@@ -60,23 +60,23 @@ const Home = ({ onClick }) => {
                 enable: true,
                 area: 800,
               },
-              value: 50,
+              value: 80,
             },
             opacity: {
-              value: 0.5,
+              value: 0.3,
             },
             shape: {
               type: "star",
             },
             size: {
-              value: { min: 1, max: 5 },
+              value: { min: 1, max: 6 },
             },
           },
           detectRetina: true,
         }}
       />
 
-      <h1 className="absolute top-1/2 left-1/2 transform text-center -translate-x-1/2 -translate-y-1/2 my-auto text-mainColor landscape-sm:text-xl text-3xl md:text-5xl lg:text-6xl">
+      <h1 className="absolute top-1/2 left-1/2 transform text-center -translate-x-1/2 -translate-y-1/2 my-auto text-white landscape-sm:text-xl text-3xl md:text-5xl lg:text-6xl">
         Witaj w miejscu, gdzie twoje marzenia rowerowe stają się
         rzeczywistością!
       </h1>
