@@ -1,4 +1,4 @@
-import { FC } from "react";
+import { FC, useCallback } from "react";
 import {
   ChainIcon,
   SteeringWheelIcon,
@@ -11,6 +11,10 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import KeyboardDoubleArrowRightIcon from "@mui/icons-material/KeyboardDoubleArrowRight";
 import { animateScroll as scroll } from "react-scroll";
+import Particles from "react-particles";
+import { loadFull } from "tsparticles";
+import { Engine } from "tsparticles-engine";
+
 const Personalize: FC = () => {
   const handleClick = () => {
     scroll.scrollToTop();
@@ -24,8 +28,72 @@ const Personalize: FC = () => {
   };
   const fadeInAnimation = createAnimationObject(-20);
   const slideUpAnimation = createAnimationObject(20);
+  const particlesInit = useCallback(async (engine: Engine) => {
+    await loadFull(engine);
+  }, []);
   return (
     <>
+      <Particles
+        id="tsparticles"
+        init={particlesInit}
+        options={{
+          fpsLimit: 120,
+          interactivity: {
+            events: {
+              onHover: {
+                enable: true,
+                mode: "repulse",
+              },
+              resize: true,
+            },
+            modes: {
+              repulse: {
+                distance: 200,
+                duration: 0.4,
+              },
+            },
+          },
+          particles: {
+            color: {
+              value: "#ffffff",
+            },
+            links: {
+              color: "transparent",
+              distance: 150,
+              enable: false,
+              opacity: 0.5,
+              width: 1,
+            },
+            move: {
+              direction: "none",
+              enable: true,
+              outModes: {
+                default: "bounce",
+              },
+              random: false,
+              speed: 2,
+              straight: false,
+            },
+            number: {
+              density: {
+                enable: true,
+                area: 800,
+              },
+              value: 40,
+            },
+            opacity: {
+              value: 0.3,
+            },
+            shape: {
+              type: "star",
+            },
+            size: {
+              value: { min: 1, max: 6 },
+            },
+          },
+          detectRetina: true,
+        }}
+      />
       <div className="black-background"></div>
       <section className="flex flex-col min-h-screen text-mainColor">
         <h2 className="mt-32 mb-16  text-xl md:text-2xl text-center mx-[10%]">
