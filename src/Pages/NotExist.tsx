@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 const NotExist: FC = () => {
   return (
     <>
-      <section className="flex flex-col h-screen justify-center items-center text-white text-4xl text-center bg-neutral-800	">
+      <main className="flex flex-col h-screen justify-center items-center text-white text-4xl text-center bg-neutral-800	">
         <h2>Podany link nie istnieje, wróć na stronę główną.</h2>
         <Link
           to="/"
@@ -11,7 +11,7 @@ const NotExist: FC = () => {
         >
           Powrót
         </Link>
-      </section>
+      </main>
     </>
   );
 };

@@ -87,7 +87,7 @@ const Contact: FC = () => {
         }}
       />
       <div className="black-background"></div>
-      <section className="contact-page flex flex-col pt-32 items-center text-mainColor min-h-screen">
+      <main className="contact-page flex flex-col pt-32 items-center text-mainColor min-h-screen">
         <h2 className="text-4xl ">Kontakt ze mną:</h2>
         <aside className="contact-options flex flex-col md:flex-row w-4/5">
           <motion.div
@@ -209,7 +209,7 @@ const Contact: FC = () => {
             title="Nidzica Map"
           ></iframe>
         </motion.div>
-      </section>
+      </main>
     </>
   );
 };
