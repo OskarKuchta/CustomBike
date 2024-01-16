@@ -1,13 +1,8 @@
 import { FC } from "react";
 import ContactSubpage from "../components/ContactSubpage";
 import { motion } from "framer-motion";
-import { useInView } from "react-intersection-observer";
 
 const Men: FC = () => {
-  const [inViewRef, inView] = useInView({
-    triggerOnce: true,
-    threshold: 1,
-  });
   return (
     <>
       <div className="bg-[url('/men-background.webp')] bg-no-repeat bg-cover fixed top-0 left-0 w-full min-h-screen z-[-1] brightness-[0.3]"></div>
@@ -23,13 +18,12 @@ const Men: FC = () => {
             scale: 0,
           }}
           animate={{
-            opacity: inView ? 1 : 0,
-            scale: inView ? 1 : 0,
+            opacity: 1,
+            scale: 1,
           }}
           transition={{
             duration: 2,
           }}
-          ref={inViewRef}
           className="w-[550px] max-w-[90vw]"
         >
           <img
